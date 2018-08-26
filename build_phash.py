@@ -3,7 +3,6 @@ from PIL import Image
 import six
 import os
 import fire
-
 import imagehash
 
 
@@ -15,7 +14,7 @@ def compute_phash(img_name, hashfunc=imagehash.average_hash):
             ".gif") or '.jpg' in f
     if not is_image(img_name):
         # print("is not img name", img_name)
-        return ""
+        return
     hash = hashfunc(Image.open(img_name))
     return str(hash), os.path.basename(img_name)
 
