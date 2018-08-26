@@ -2,8 +2,7 @@
 Fast hash images, run 100% cpu.
 
 ## Snapshot
-![](./snapshot/img1.png)
-
+<img src="./snapshot/img1.png" width="70%" height="70%" />
 ## Install
 ```bash
 pip install requirements.txt
